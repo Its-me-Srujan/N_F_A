@@ -1,0 +1,195 @@
+<mvc:View controllerName="sap.fiori.project1.controller.App"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <!-- <Shell id="Shell1">
+        <App id="app" class="sapUiSizeCompact">
+            <pages>
+                <Page id="page" title="Sourcing Event">
+            <content>     
+                <Table id="List" growing="false" growingThreshold="12">
+            <headerToolbar>
+                <OverflowToolbar id="q">
+                <content>
+                <HBox id="VBox1" justifyContent="End" alignItems="End" height="100%">
+				<SearchField id="SearchField1" width="100%" search=".onSearch" />
+		            
+                    <Button id="b" icon="sap-icon://">
+						<layoutData>
+						    <OverflowToolbarLayoutData id="OverflowToolbarLayoutData1" priority="NeverOverflow"/>
+						</layoutData>
+					</Button>
+                </HBox>                                    
+                </content>   
+                   <content> 
+                   </content>
+                </OverflowToolbar>
+            </headerToolbar>
+                <columns>
+			    <Column id="Column1">
+			    	<Text id="Itemname" text="Source Event Name"/>
+			    </Column>
+                <Column id="Descrip">
+			    	<Text id="Description" text="Description"/>
+			    </Column>
+                 <Column id="Descrip1">
+			    	<Text id="Description1" text="Created By"/>
+			    </Column>
+                <Column id="Descrip2">
+			    	<Text id="Description2" text="Status"/>
+			    </Column>
+                <Column id="Descrip3">
+			    	<Text id="Description3" text="Version"/>
+			    </Column>
+                <Column id="Descrip4">   
+                </Column>
+                </columns>    
+               
+                <items>
+					<ColumnListItem id="ColumnListItem1">
+						<cells>
+						    <Text id="Text1" text="Event 1"/>
+						</cells>
+                        <cells>
+						    <Text id="Text2" text="Description 1"/>
+						</cells>
+                        <cells>
+						    <Text id="Text3" text=""/>
+						</cells>
+                        <cells>
+						    <Text id="Text4" text=""/>
+						</cells>
+                        <cells>
+						    <Button id="butt" text="Version 2" press=".fetchversion"></Button>
+						</cells>
+                        <cells>
+                            <Button id="icon1" icon="sap-icon://show" press=".onload"></Button>
+                        </cells>   
+                    </ColumnListItem>
+				</items>
+
+                <items>
+					<ColumnListItem id="ColumnListItem2">
+						<cells>
+						    <Text id="Text11" text="Event 2"/>
+						</cells>
+                        <cells>
+						    <Text id="Text22" text="Description 2"/>
+						</cells>
+                        <cells>
+						    <Text id="Text33" text=""/>
+						</cells>
+                        <cells>
+						    <Text id="Text44" text=""/>
+						</cells>
+                        <cells>
+						    <Button id="but5" text="Version 1" press=".fetchversion"></Button>
+						</cells> 
+                        <cells>
+                            <Button id="icon" icon="sap-icon://show" press=".onload"></Button>
+                        </cells>
+                    </ColumnListItem>
+				</items>    
+
+                <items>
+					<ColumnListItem id="ColumnListItem4">
+						<cells>
+						    <Text id="Text6" text="Event 3"/>
+						</cells>
+                        <cells>
+						    <Text id="Text7" text="Description 3"/>
+						</cells>
+                        <cells>
+						    <Text id="Text8" text=""/>
+						</cells>
+                        <cells>
+						    <Text id="Text9" text=""/>
+						</cells>
+                        <cells>
+						    <Button id="but10" text="Version 3" press=".fetchversion"></Button>
+						</cells> 
+                        <cells>
+                            <Button id="icon12" icon="sap-icon://show" press=".onload"></Button>
+                        </cells>
+                    </ColumnListItem>
+				</items>
+
+                <items>
+					<ColumnListItem id="ColumnListItem5">
+						<cells>
+						    <Text id="Text01" text="Event 4"/>
+						</cells>
+                        <cells>
+						    <Text id="Text02" text="Description 4"/>
+						</cells>
+                        <cells>
+						    <Text id="Text03" text=""/>
+						</cells>
+                        <cells>
+						    <Text id="Text04" text=""/>
+						</cells>
+                        <cells>
+						    <Button id="but025" text="Version 5" press=".fetchversion"></Button>
+						</cells> 
+                        <cells>
+                            <Button id="icon011" icon="sap-icon://show" press=".onload"></Button>
+                        </cells>
+                    </ColumnListItem>
+				</items>
+
+                <items>
+					<ColumnListItem id="ColumnListItem6">
+						<cells>
+						    <Text id="TextE1" text="Event 5"/>
+						</cells>
+                        <cells>
+						    <Text id="Text3E2" text="Description 5"/>
+						</cells>
+                        <cells>
+						    <Text id="Text43E" text=""/>
+						</cells>
+                        <cells>
+						    <Text id="Text34E" text=""/>
+						</cells>
+                        <cells>
+						    <Button id="but25E" text="Version 6" press=".fetchversion"></Button>
+						</cells> 
+                        <cells>
+                            <Button id="icon11E" icon="sap-icon://show" press=".onload"></Button>
+                        </cells>
+                    </ColumnListItem>
+				</items>
+
+                <items>
+					<ColumnListItem id="ColumnListItem3">
+						<cells>
+						    <Text id="Text21" text="Event 6"/>
+						</cells>
+                        <cells>
+						    <Text id="Text32" text="Description 6"/>
+						</cells>
+                        <cells>
+						    <Text id="Text43" text=""/>
+						</cells>
+                        <cells>
+						    <Text id="Text34" text=""/>
+						</cells>
+                        <cells>
+						    <Button id="but25" text="Version 4" ></Button>
+						</cells> 
+                        <cells>
+                            <Button id="icon11" icon="sap-icon://show" press=".onload"></Button>
+                        </cells>
+                    </ColumnListItem>                
+				</items>    
+            </Table>     
+        </content>
+        <footer>
+			<Toolbar id="Toolbar1" visible="{appView>/hasUIChanges}">
+				<ToolbarSpacer id="ToolbarSpacer1"/>
+			</Toolbar>
+		</footer>
+        </Page>
+        </pages>
+        </App>
+    </Shell> -->
+</mvc:View>

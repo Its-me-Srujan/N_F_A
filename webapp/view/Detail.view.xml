@@ -1,0 +1,93 @@
+<mvc:View
+    controllerName="sap.fiori.project1.controller.Detail"
+    xmlns="sap.m"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    xmlns:semantic="sap.f.semantic"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+>
+    <Shell id="Shell">
+        <App
+            id="App1"
+            busy="{appView>/busy}"
+            class="sapUiSizeCompact"
+        >
+            <pages>
+                <Page
+                    id="Page1"
+                    title="{i18n>VendorComparision}"
+                >
+                  <Button
+                                            id="Version21"
+                                            type="Emphasized"
+                                            text="Version"
+                                            press=".fetchversion"
+                                            class="butt1"
+                                        />
+                                        <Button
+                                            id="Preview21"
+                                            type="Emphasized"
+                                            text="{i18n>Preview}"
+                                            press=".onPreview"
+                                             class="butt2"
+                                        />
+                                    
+                    <Panel
+                        id="_IDGenPanel1"
+                        expandable="false"
+                        headerText="Details"
+                        width="auto"
+                        class="sapUiResponsiveMargin"
+                    >
+                        <content>
+                            <Table
+                                id="idMyTable"
+                                growing="true"
+                                class="myTable">
+
+                            </Table>
+                        </content>
+                    </Panel>
+                    <Panel
+                        id="_IDGenPanel2"
+                        expandable="true"
+                        headerText="questionnaire"
+                        width="auto"
+                        class="sapUiResponsiveMargin">
+                        <!-- <headerToolbar>
+                            <OverflowToolbar
+                                id="_IDGenOverflowToolbar1"
+                                style="Clear"
+                            >
+                                <Title
+                                    id="_IDGenTitle1"
+                                    text="Questionary"
+                                />
+                                <ToolbarSpacer id="_IDGenToolbarSpacer1" />
+                            </OverflowToolbar>
+                        </headerToolbar> -->
+                        <content>
+                            <Table id="list2" growing="true"
+                                >
+                                <!-- <headerToolbar>
+                                    <Toolbar id="tool2">
+                                        <ToolbarSpacer id="shiftright2" />
+                                        
+                                    </Toolbar>
+                                </headerToolbar> -->
+                               
+                            </Table>
+                        </content>
+                    </Panel>
+                    <footer>
+                        <Toolbar id="Toolbar1" visible="{appView>/hasUIChanges}">
+                            <ToolbarSpacer id="ToolbarSpacer1"/>
+                        </Toolbar>
+                    </footer>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
