@@ -15,8 +15,8 @@
                 <Title id="_IDGenTitle1" text="Vendor Price Comparison" />
                 <ToolbarSpacer id="_IDGenToolbarSpacer3" width="25px" />
                 <Select id="_IDGenSelect1" width="150px" change=".handleSelectChange">
-                    <core:Item id="_IDGenItem1" key="option1" text="Vendor 1" />
-                    <core:Item id="_IDGenItem2" key="option2" text="Vendor 2" />
+                    <core:Item id="_IDGenItem1" key="option1" text="{oJSONModel>/headers/value1}" />
+                    <core:Item id="_IDGenItem2" key="option2" text="{oJSONModel>/headers/value2}" />
                     <!-- Add more options for other vendors if needed -->
                 </Select>
             </Toolbar>
